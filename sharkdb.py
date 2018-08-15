@@ -29,4 +29,4 @@ for n in news:
         c.execute('''INSERT INTO mytable(Location, Date, Description) VALUES(?,?,?)''',
             (place, date, article))
 c.commit()
-c.closer()
+c.close()
